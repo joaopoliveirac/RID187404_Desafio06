@@ -1,2 +1,4 @@
+postgres:
+    port: "5450"
 project:
     name: projeto-final-dnc
