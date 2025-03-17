@@ -87,3 +87,31 @@ Este projeto de pipeline de dados, utilizando Apache Airflow, Docker, Python e P
 Através da utilização de uma DAG no Airflow, conseguimos orquestrar e controlar o fluxo de execução das tasks, garantindo que cada etapa fosse realizada de maneira sequencial e no momento certo. A escolha de ferramentas como Pandas para o processamento e Docker para isolar o ambiente de execução contribuiu para a escalabilidade e flexibilidade da solução.
 
 O pipeline desenvolvido neste projeto demonstra a importância de processos automatizados e bem estruturados para transformar dados brutos em informações valiosas que podem ser utilizadas para tomada de decisões estratégicas. Com o Airflow, a solução se torna ainda mais eficiente e fácil de manter, permitindo a realização de ajustes e melhorias contínuas no processamento de dados à medida que a necessidade de novos insights cresce.
+
+## Como Executar o Projeto
+
+Antes de executar o projeto, você precisa ter o Docker Compose instalado [Como instalar Docker Compose](https://docs.docker.com/compose/install/) e o Astronomer CLI(airflow) [Como instalar o Astronomer CLI](https://www.astronomer.io/docs/astro/cli/install-cli).
+
+### 1- Clonar o repositório
+Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/joaopoliveirac/RID187404_Desafio06
+```
+
+
+### 2- Acessar o repositório do projeto
+Após clonar o repositório, entre no diretório do projeto:
+
+```bash
+cd RID187404_Desafio06
+```
+
+### 3- Iniciar o Astronomer CLI
+Estando na pasta do projeto, rodar o seguinte comando para iniciar:
+
+```bash
+astro dev start
+```
+
+Isso irá subir o container do projeto no seu Docker e permitir o acesso ao [Airflow](localhost:8080) para acompanhar a execução da pipeline.
