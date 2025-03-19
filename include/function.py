@@ -39,6 +39,8 @@ def process_silver_to_gold(nome_arquivo):
 
 
 
+
+
     
 
 
